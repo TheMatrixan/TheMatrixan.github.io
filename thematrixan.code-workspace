@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/.DS_Store": true,
+      "**/.expo": true,
+      "**/node_modules/**": true,
+      "**/desktop.ini": true
+    },
+    "editor.wordWrapColumn": 120,
+    "git.ignoreLimitWarning": true
+  }
+}
