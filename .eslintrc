@@ -33,6 +33,11 @@
   },
   "globals": {
     "document": true,
+    "clearTimeout": true,
+    "AbortController": true,
+    "fetch": true,
+    "setTimeout": true,
+    "process": true,
     "window": true,
     "console": true
   }

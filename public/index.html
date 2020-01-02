@@ -1,26 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Web site created using create-react-app" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <meta name="robots" content="follow" />
+    <meta property="og:type" content="website" />
+    <meta name="fragment" content="!" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="author" content="Mateusz Lesiak" />
+    <meta name="description" content="Mateusz Lesiak" />
     <title>Mateusz Lesiak</title>
+    <meta property="og:title" content="Mateusz Lesiak" />
+    <meta property="og:image:alt" content="Mateusz Lesiak" />
+    <meta property="og:site_name" content="Mateusz Lesiak" />
+    <meta property="og:description" content="Mateusz Lesiak" />
+    <meta name="keywords" content="mateusz, lesiak, cv, resume, fullstack, developer, programista" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="copyright" content="Mateusz Lesiak" />
+    <link id="icon-scheme-light" rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#2b5797" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <style>body{margin:0}#loader{position:absolute;top:0;left:0;width:100%;height:100%;z-index:10000;background-color:#192129;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#loader-border{stroke-dasharray:1010;stroke-dashoffset:1010;-webkit-animation:loader-anim-border 1.5s cubic-bezier(0.87,0.16,0.57,1) 1 both;animation:loader-anim-border 1.5s cubic-bezier(0.87,0.16,0.57,1) 1 both;stroke-linecap:square;stroke-linejoin:miter}@-webkit-keyframes loader-anim-border{from{stroke-dashoffset:1000}to{stroke-dashoffset:0}}@keyframes loader-anim-border{from{stroke-dashoffset:1000}to{stroke-dashoffset:0}}@-webkit-keyframes loader-hide{0%{opacity:1;display:block}50%{display:block;opacity:0}90%{opacity:0}100%{display:none;width:0;height:0;left:-9999px}}@keyframes loader-hide{0%{opacity:1;display:block}50%{display:block;opacity:0}90%{opacity:0}100%{display:none;width:0;height:0;left:-9999px}}body.loaded .loader-box{-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);opacity:0;-webkit-transition:opacity 0.1s ease-out 0.1s,-webkit-transform 0.3s cubic-bezier(0.65,0.05,0.36,1);transition:opacity 0.1s ease-out 0.1s,-webkit-transform 0.3s cubic-bezier(0.65,0.05,0.36,1);-o-transition:transform 0.3s cubic-bezier(0.65,0.05,0.36,1),opacity 0.1s ease-out 0.1s;transition:transform 0.3s cubic-bezier(0.65,0.05,0.36,1),opacity 0.1s ease-out 0.1s;transition:transform 0.3s cubic-bezier(0.65,0.05,0.36,1),opacity 0.1s ease-out 0.1s,-webkit-transform 0.3s cubic-bezier(0.65,0.05,0.36,1)}body.loaded #loader{-webkit-animation:loader-hide 0.5s linear 0.4s 1 forwards;animation:loader-hide 0.5s linear 0.4s 1 forwards}@media (prefers-reduced-motion:reduce){#loader{display:none!important}}</style>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <div lang="en">You need to enable JavaScript to run this app.</div>
+      <div lang="pl">Musisz aktywować JavaScript aby wyświetlić tę stronę.</div>
+    </noscript>
+    <div id="loader">
+      <div class="loader-box">
+        <svg xmlns="http://www.w3.org/2000/svg" width="149.623" height="109.799" viewBox="0 0 149.623 109.799">
+          <path
+            id="loader-border"
+            d="M92.115-88.319v22.9L59.9-24.912H57.12L24.525-65.422V16.122H23.8L9.521-7.514V-88.677h14.2L58.549-45.636,91.392-88.319Zm0,22.9h15V2.469h47.026v.539L130.509,16.122H92.115Z"
+            transform="translate(-7.021 91.177)"
+            fill="none"
+            stroke="#EC8D10"
+            stroke-width="5"
+          />
+        </svg>
+      </div>
+    </div>
     <div id="root"></div>
   </body>
 </html>
