@@ -45,22 +45,3 @@ $breakpoints: (
     }
   }
 }
-
-$themes: (
-  light: light,
-  dark: dark,
-);
-
-@mixin theme($theme) {
-  @if map-has-key($themes, $theme) {
-    @if ($theme == light) {
-      @content;
-    } @else {
-      @media (prefers-color-scheme: $theme) {
-        @content;
-      }
-    }
-  } @else {
-    @warn 'Theme is not correct';
-  }
-}

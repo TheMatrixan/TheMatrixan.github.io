@@ -6,6 +6,8 @@ enum Languages {
   Polish = 'pl',
 }
 
+const LanguageCodes = Object.keys(Languages).map(key => Languages[key]);
+
 const messages = {
   [Languages.Polish]: messagesPL,
   [Languages.English]: messagesEN,
@@ -13,4 +15,12 @@ const messages = {
 
 const defaultLanguage = Languages.Polish;
 
-export { messages, Languages, defaultLanguage };
+const userLanguage = (): Languages => {
+  const browserLang = window.navigator.language.split(/[-_]/)[0];
+  if (LanguageCodes.includes(browserLang)) {
+    return browserLang as Languages;
+  }
+  return defaultLanguage;
+};
+
+export { messages, Languages, userLanguage, defaultLanguage };

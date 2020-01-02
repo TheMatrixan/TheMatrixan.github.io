@@ -1,7 +1,6 @@
 import React from 'react';
 
 import LanguageProvider from './hocs/LanguageProvider';
-import ThemeProvider from './hocs/ThemeProvider';
 import Router from './hocs/Router';
 
 import './assets/styles/styles.scss';
@@ -15,9 +14,7 @@ if (process.env.NODE_ENV !== 'production') {
 const App: React.FC = () => {
   return (
     <LanguageProvider>
-      <ThemeProvider>
-        <Router />
-      </ThemeProvider>
+      <Router />
     </LanguageProvider>
   );
 };

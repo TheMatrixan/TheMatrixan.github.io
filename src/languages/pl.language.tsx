@@ -1,4 +1,7 @@
 const pl = {
+  'lang.pl': 'Polski',
+  'lang.en': 'Angielski',
+  'theme.change': 'Zmień motyw',
   'navigation.aboutMe': 'O mnie',
   'navigation.portfolio': 'Portfolio',
   'navigation.contact': 'Kontakt',
@@ -11,6 +14,8 @@ const pl = {
   'icon.githubFork': 'Ikona rozgałęzienia dla repozytorium z GitHub',
   'icon.adobeXd': 'Adobe XD',
   'icon.reactJs': 'React.Js',
+  pageInBuilding: 'Strona w budowie',
+  viewLinkedIn: 'Zobacz mój LinkedIn',
   'icon.typeScript': 'TypeScript',
 };
 

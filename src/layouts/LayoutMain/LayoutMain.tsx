@@ -24,7 +24,7 @@ const LayoutMain: React.FC<LayoutMainProps> = ({ children }: LayoutMainProps) =>
     <>
       <Header />
       <Suspense fallback="TODO: Loading...">
-        <main>{children}</main>
+        <main style={{ flex: 1 }}>{children}</main>
       </Suspense>
       <Footer />
     </>

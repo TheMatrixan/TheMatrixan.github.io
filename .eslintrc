@@ -34,6 +34,7 @@
   "globals": {
     "document": true,
     "clearTimeout": true,
+    "localStorage": true,
     "AbortController": true,
     "fetch": true,
     "setTimeout": true,

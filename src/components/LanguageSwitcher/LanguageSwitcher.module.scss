@@ -1,0 +1,21 @@
+.switchers {
+  display: flex;
+  margin: 0 5px;
+}
+
+.btn-lang {
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--navbar-c, #94a6e0);
+  font-size: 12px;
+  margin: 3px 5px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &.active {
+    color: var(--navbar-c-h, #fff);
+  }
+}

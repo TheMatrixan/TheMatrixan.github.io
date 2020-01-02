@@ -1,11 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { FormattedMessage } from 'react-intl';
+
+import styles from './Homepage.module.scss';
 
 const Homepage: React.FC = () => {
-  console.log('loaded Homepage');
   return (
-    <div>
-      <Link to="/resume">resume</Link>
+    <div className={styles['temp']}>
+      <h1>Mateusz Lesiak</h1>
+      <h2>
+        <FormattedMessage id="pageInBuilding" />
+      </h2>
+      <a className="btn" href="https://www.linkedin.com/in/mateusz-lesiak-tul/">
+        <FormattedMessage id="viewLinkedIn" />
+      </a>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 .footer {
-  background-color: #0c1015;
+  background-color: var(--footer-bg, #0c1015);
 }
 .row {
   padding: 0.625rem;
@@ -7,7 +7,7 @@
 }
 
 .info {
-  color: #888;
+  color: var(--footer-c, #888);
   font-size: 0.875rem;
 }
 .link {
