@@ -1,3 +1,5 @@
+@import '../../assets/styles/utils/media_queries';
+
 .switchers {
   display: flex;
   margin: 0 5px;
@@ -17,5 +19,13 @@
   &:focus,
   &.active {
     color: var(--navbar-c-h, #fff);
+  }
+}
+
+@include respond-below(xs) {
+  .btn-lang {
+    font-size: 1.125rem;
+    padding: 5px 8px;
+    margin: 0 5px;
   }
 }

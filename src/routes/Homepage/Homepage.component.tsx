@@ -5,15 +5,17 @@ import styles from './Homepage.module.scss';
 
 const Homepage: React.FC = () => {
   return (
-    <div className={styles['temp']}>
-      <h1>Mateusz Lesiak</h1>
-      <h2>
-        <FormattedMessage id="pageInBuilding" />
-      </h2>
-      <a className="btn" href="https://www.linkedin.com/in/mateusz-lesiak-tul/">
-        <FormattedMessage id="viewLinkedIn" />
-      </a>
-    </div>
+    <section className="homepage">
+      <div className={styles['temp']}>
+        <h1>Mateusz Lesiak</h1>
+        <h2>
+          <FormattedMessage id="pageInBuilding" />
+        </h2>
+        <a className="btn" href="https://www.linkedin.com/in/mateusz-lesiak-tul/">
+          <FormattedMessage id="viewLinkedIn" />
+        </a>
+      </div>
+    </section>
   );
 };
 

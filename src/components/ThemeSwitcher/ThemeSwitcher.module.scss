@@ -1,14 +1,18 @@
+@import '../../assets/styles/utils/media_queries';
+
 .input {
   position: absolute;
   left: -99em;
 }
 
 .toggle {
+  --theme-toggle-size: 18px;
+
   cursor: pointer;
   display: inline-block;
   position: relative;
-  width: 50px;
-  height: 18px;
+  width: calc(var(--theme-toggle-size) * 2.77);
+  height: var(--theme-toggle-size, 18px);
   background-color: #83d8ff;
   border-radius: 30px;
   transition: background-color 0.2s ease;
@@ -18,12 +22,12 @@
   display: inline-block;
   position: relative;
   z-index: 1;
-  top: 2px;
-  left: 2px;
-  width: 14px;
-  height: 14px;
+  top: calc(var(--theme-toggle-size) / 9);
+  left: calc(var(--theme-toggle-size) / 9);
+  width: calc(var(--theme-toggle-size) * 0.77);
+  height: calc(var(--theme-toggle-size) * 0.77);
   background-color: #ffcf96;
-  border-radius: 10px;
+  border-radius: var(--theme-toggle-size);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
@@ -68,7 +72,7 @@
   top: 2px;
   left: 15px;
   z-index: 0;
-  width: 30px;
+  width: 20px;
   height: 3px;
 }
 
@@ -76,15 +80,15 @@
   top: 8px;
   left: 8px;
   z-index: 1;
-  width: 30px;
+  width: 15px;
   height: 3px;
 }
 
 .star--3 {
   top: 13px;
-  left: 15px;
+  left: 25px;
   z-index: 0;
-  width: 30px;
+  width: 10px;
   height: 3px;
 }
 
@@ -136,7 +140,7 @@ input:checked {
 
     .toggle__handler {
       background-color: #ffe5b5;
-      transform: translate3d(32px, 0, 0) rotate(0);
+      transform: translate3d(calc(var(--theme-toggle-size) * 1.77), 0, 0) rotate(0);
 
       .crater {
         opacity: 1;
@@ -157,6 +161,7 @@ input:checked {
     .star--3 {
       width: 2px;
       height: 2px;
+      left: 15px;
       transform: translate3d(-7px, 0, 0);
     }
 
@@ -175,5 +180,11 @@ input:checked {
     .star--6 {
       transition: all 300ms 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
     }
+  }
+}
+
+@include respond-below(xs) {
+  .toggle {
+    --theme-toggle-size: 30px;
   }
 }

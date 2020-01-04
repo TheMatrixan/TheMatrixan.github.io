@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { FormattedMessage, injectIntl, useIntl } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 
-import adobeXdIcon from 'assets/img/adobe-xd.svg';
-import reactIcon from 'assets/img/react.svg';
-import typescriptIcon from 'assets/img/typescript.svg';
-import githubStarIcon from 'assets/img/github-star.svg';
-import githubForkIcon from 'assets/img/github-fork.svg';
+import Icon from 'components/Icon';
 
 import styles from './Footer.module.scss';
 
@@ -41,31 +37,16 @@ const Footer: React.FC = () => {
             <span className={styles['icon-num']}>
               <FormattedMessage id="footer.designedIn" />
               &nbsp;
-              <img
-                className={styles['icon']}
-                src={adobeXdIcon}
-                alt={formatMessage({ id: 'icon.adobeXd' })}
-                title={formatMessage({ id: 'icon.adobeXd' })}
-              />
+              <Icon size={20} name="adobeXd" fill="icon-adobeXd" title="icon.adobeXd" />
             </span>
             <br />
             <span className={styles['icon-num']}>
               <FormattedMessage id="footer.createdWith" />
               &nbsp;
-              <img
-                className={styles['icon']}
-                src={reactIcon}
-                alt={formatMessage({ id: 'icon.reactJs' })}
-                title={formatMessage({ id: 'icon.reactJs' })}
-              />
-              <img
-                className={styles['icon']}
-                src={typescriptIcon}
-                alt={formatMessage({ id: 'icon.typeScript' })}
-                title={formatMessage({ id: 'icon.typeScript' })}
-              />
+              <Icon size={20} name="react" fill="icon-react" title="icon.reactJs" />
+              &nbsp;
+              <Icon size={20} name="typescript" fill="icon-typescript" title="icon.typeScript" />
             </span>
-            <br />
           </span>
           <a
             href="https://github.com/TheMatrixan/TheMatrixan.github.io"
@@ -75,12 +56,12 @@ const Footer: React.FC = () => {
             rel="noopener noreferrer"
           >
             <span className={styles['icon-num']}>
-              <img className={styles['icon']} src={githubStarIcon} alt={formatMessage({ id: 'icon.githubStar' })} />
-              {stars}
+              <Icon name="github-star" fill="primary" title="icon.githubStar" />
+              &nbsp;{stars}
             </span>
             <span className={styles['icon-num']}>
-              <img className={styles['icon']} src={githubForkIcon} alt={formatMessage({ id: 'icon.githubFork' })} />
-              {forks}
+              <Icon name="github-fork" fill="primary" title="icon.githubFork" />
+              &nbsp;{forks}
             </span>
           </a>
         </div>
@@ -89,4 +70,4 @@ const Footer: React.FC = () => {
   );
 };
 
-export default injectIntl(Footer);
+export default Footer;

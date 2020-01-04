@@ -1,4 +1,8 @@
 const en = {
+  fullname: 'Mateusz Lesiak',
+  home: 'Lodz, Poland',
+  getInTouch: 'Get in touch',
+  goToGoogleMaps: 'Go to Google Maps',
   'lang.pl': 'Polish',
   'lang.en': 'English',
   'theme.change': 'Change theme',
@@ -14,6 +18,9 @@ const en = {
   'icon.githubFork': 'Fork icon for the GitHub repository',
   'icon.adobeXd': 'Adobe XD',
   'icon.reactJs': 'React.Js',
+  'button.menu.toggle': 'Toggle menu',
+  'contact.btn': 'View Resume',
+  'contact.title': 'Contact',
   pageInBuilding: 'Site under construction',
   viewLinkedIn: 'View my LinkedIn',
   'icon.typeScript': 'TypeScript',
