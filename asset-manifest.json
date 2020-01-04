@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.bfe15eb4.chunk.css",
-    "main.js": "/static/js/main.4404b7c5.chunk.js",
-    "main.js.map": "/static/js/main.4404b7c5.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.66c712a2.js",
-    "runtime-main.js.map": "/static/js/runtime-main.66c712a2.js.map",
-    "static/js/2.34c66e19.chunk.js": "/static/js/2.34c66e19.chunk.js",
-    "static/js/2.34c66e19.chunk.js.map": "/static/js/2.34c66e19.chunk.js.map",
+    "main.css": "/static/css/main.17544aff.chunk.css",
+    "main.js": "/static/js/main.5f8c2372.chunk.js",
+    "main.js.map": "/static/js/main.5f8c2372.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.30649e75.js",
+    "runtime-main.js.map": "/static/js/runtime-main.30649e75.js.map",
+    "static/js/2.a0f8c4c3.chunk.js": "/static/js/2.a0f8c4c3.chunk.js",
+    "static/js/2.a0f8c4c3.chunk.js.map": "/static/js/2.a0f8c4c3.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.61b926b706b88a837962bfd910c4562f.js": "/precache-manifest.61b926b706b88a837962bfd910c4562f.js",
+    "precache-manifest.3eac093364d7bb48b1bdad9b54bf2d07.js": "/precache-manifest.3eac093364d7bb48b1bdad9b54bf2d07.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.bfe15eb4.chunk.css.map": "/static/css/main.bfe15eb4.chunk.css.map",
-    "static/js/2.34c66e19.chunk.js.LICENSE": "/static/js/2.34c66e19.chunk.js.LICENSE",
-    "static/media/adobe-xd.svg": "/static/media/adobe-xd.c8b85581.svg",
-    "static/media/github-fork.svg": "/static/media/github-fork.09265842.svg",
-    "static/media/github-star.svg": "/static/media/github-star.85d514ef.svg",
-    "static/media/logo.svg": "/static/media/logo.7132eef3.svg",
-    "static/media/react.svg": "/static/media/react.e9f3d01c.svg",
-    "static/media/typescript.svg": "/static/media/typescript.02867dbe.svg"
+    "static/css/main.17544aff.chunk.css.map": "/static/css/main.17544aff.chunk.css.map",
+    "static/js/2.a0f8c4c3.chunk.js.LICENSE": "/static/js/2.a0f8c4c3.chunk.js.LICENSE",
+    "static/media/icons.svg": "/static/media/icons.7348e7f4.svg",
+    "static/media/logo.svg": "/static/media/logo.abb2a07c.svg",
+    "static/media/mateusz_lesiak.jpg": "/static/media/mateusz_lesiak.1dd17ba1.jpg",
+    "static/media/mateusz_lesiak.webp": "/static/media/mateusz_lesiak.8a205d9d.webp",
+    "static/media/mateusz_lesiak@2x.jpg": "/static/media/mateusz_lesiak@2x.02462150.jpg",
+    "static/media/mateusz_lesiak@2x.webp": "/static/media/mateusz_lesiak@2x.5aede141.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.66c712a2.js",
-    "static/js/2.34c66e19.chunk.js",
-    "static/css/main.bfe15eb4.chunk.css",
-    "static/js/main.4404b7c5.chunk.js"
+    "static/js/runtime-main.30649e75.js",
+    "static/js/2.a0f8c4c3.chunk.js",
+    "static/css/main.17544aff.chunk.css",
+    "static/js/main.5f8c2372.chunk.js"
   ]
 }
