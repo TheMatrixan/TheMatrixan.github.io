@@ -21,6 +21,10 @@ const en = {
   'button.menu.toggle': 'Toggle menu',
   'contact.btn': 'View Resume',
   'contact.title': 'Contact',
+  'homepage.introduction': 'Hello, my name is',
+  'homepage.description':
+    'I am a software engineer from Lodz who specializes in building (and sometimes designing) high-quality websites and applications',
+  'homepage.btn': 'View resume',
   pageInBuilding: 'Site under construction',
   viewLinkedIn: 'View my LinkedIn',
   'icon.typeScript': 'TypeScript',

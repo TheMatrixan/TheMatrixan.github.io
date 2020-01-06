@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import cn from 'classnames';
 
 import LanguageSwitcher from 'components/LanguageSwitcher';
-import ThemeSwitcher from 'components/ThemeSwitcher';
+// import ThemeSwitcher from 'components/ThemeSwitcher';
 import Hexagon from 'components/Hexagon';
 
 import { navigation } from 'config';
@@ -30,7 +30,8 @@ const Header: React.FC = () => {
             </div>
             <div className={cn(styles['navbar-top'], { [styles['mobile']]: menuToggled })}>
               <LanguageSwitcher />
-              <ThemeSwitcher />
+              {/* TODO: Add Theme
+               <ThemeSwitcher /> */}
             </div>
             <ul className={cn(styles['navbar-menu'], { [styles['mobile']]: menuToggled })}>
               {navigation.map(({ path, name, enhance = false }, index) => (
@@ -61,7 +62,7 @@ const Header: React.FC = () => {
           </div>
         </div>
       </header>
-      <div className={styles['hexagons']}>
+      <div className="hexagons">
         <div className="container relative">
           <Hexagon className={styles['hex-menu']} />
         </div>

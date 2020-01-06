@@ -21,6 +21,10 @@ const pl = {
   'icon.reactJs': 'React.Js',
   'button.menu.toggle': 'Rozwiń/Zwiń menu',
   'contact.title': 'Kontakt',
+  'homepage.introduction': 'Cześć, jestem',
+  'homepage.description':
+    'Jestem inżynierem oprogramowania z Łodzi, który specjalizuje się w budowaniu (i czasami projektowaniu) stron oraz aplikacji internetowych wysokiej jakości',
+  'homepage.btn': 'Zobacz CV',
   pageInBuilding: 'Strona w budowie',
   viewLinkedIn: 'Zobacz mój LinkedIn',
   'icon.typeScript': 'TypeScript',
