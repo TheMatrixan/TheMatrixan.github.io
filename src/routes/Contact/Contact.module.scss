@@ -7,7 +7,7 @@
 
   &-section {
     flex: 0 0 50%;
-    animation: slideInDown 0.4s 0.1s 1 both ease-out;
+    animation: slideInDown 0.5s 0.1s 1 both ease-out;
     animation-play-state: paused;
 
     $intro-section-padding: 20px;
@@ -113,5 +113,11 @@ body[class*='page-loaded'] {
         padding: 0;
       }
     }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-section {
+    animation: none !important;
   }
 }

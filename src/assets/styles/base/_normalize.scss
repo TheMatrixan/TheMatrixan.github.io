@@ -352,6 +352,7 @@ template {
   display: none;
 }
 
+[class^='hex'],
 [class^='icon-'],
 [class*=' icon-'] {
   display: inline-block;

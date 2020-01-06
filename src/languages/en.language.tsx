@@ -9,7 +9,7 @@ const en = {
   'navigation.aboutMe': 'About me',
   'navigation.portfolio': 'Portfolio',
   'navigation.contact': 'Contact',
-  'navigation.resume': 'See CV',
+  'navigation.resume': 'Resume',
   'header.logo': 'Mateusz Lesiak logo',
   'footer.viewRepository': 'Go to the repository',
   'footer.designedIn': 'Designed in',

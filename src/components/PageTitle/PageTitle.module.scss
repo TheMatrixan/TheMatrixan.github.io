@@ -38,3 +38,9 @@ body[class*='page-loaded'] {
     animation-play-state: running;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .wrapper {
+    animation: none !important;
+  }
+}

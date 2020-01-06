@@ -1,0 +1,5 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <path id="hexagon_full" d="M384,0,512,220.98,384,441.961H128L0,220.98,128,0Z" transform="translate(0 35)" fill="#1e1e1e"/>
+  <circle id="background" cx="256" cy="256" r="256" fill="none"/>
+  <path id="loader-border" d="M195.806-87.871v51.644L123.136,55.139h-6.26L43.361-36.226V147.689H41.73L9.521,94.38V-88.677H41.558L120.1,8.4l74.076-96.27Zm0,51.644h33.839V116.9H335.709v1.217L282.4,147.689H195.806Z" transform="translate(83.289 226.399)" fill="none" stroke="#4ec9a7" stroke-width="16"/>
+</svg>

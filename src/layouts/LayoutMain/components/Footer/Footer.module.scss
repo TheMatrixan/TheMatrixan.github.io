@@ -38,6 +38,13 @@
   height: 1.25rem;
 }
 
+@include respond-below(sm) {
+  .row {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 @keyframes opacityAnim {
   0% {
     visibility: visible;
@@ -55,9 +62,8 @@ body[class*='loader-loaded'] {
   }
 }
 
-@include respond-below(sm) {
-  .row {
-    flex-direction: column;
-    justify-content: center;
+@media (prefers-reduced-motion: reduce) {
+  .footer {
+    animation: none !important;
   }
 }

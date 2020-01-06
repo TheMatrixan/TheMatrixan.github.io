@@ -7,16 +7,25 @@
     <meta name="fragment" content="!" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="author" content="Mateusz Lesiak" />
-    <meta name="description" content="Mateusz Lesiak" />
+    <meta
+      name="description"
+      content="Jestem inżynierem oprogramowania z Łodzi, który specjalizuje się w budowaniu (i czasami projektowaniu) stron oraz aplikacji internetowych wysokiej jakości."
+    />
     <title>Mateusz Lesiak</title>
+    <meta property="og:url" content="https://thematrixan.github.io/" />
     <meta property="og:title" content="Mateusz Lesiak" />
+    <meta property="og:locale" content="pl" />
+    <meta property="og:image" content="%PUBLIC_URL%/mateusz_lesiak.jpg" />
     <meta property="og:image:alt" content="Mateusz Lesiak" />
     <meta property="og:site_name" content="Mateusz Lesiak" />
-    <meta property="og:description" content="Mateusz Lesiak" />
-    <meta name="keywords" content="mateusz, lesiak, cv, resume, fullstack, developer, programista" />
+    <meta
+      property="og:description"
+      content="Jestem inżynierem oprogramowania z Łodzi, który specjalizuje się w budowaniu (i czasami projektowaniu) stron oraz aplikacji internetowych wysokiej jakości."
+    />
+    <meta name="keywords" content="mateusz,lesiak,cv,resume,fullstack,developer,programista,frontend,inżynier" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="copyright" content="Mateusz Lesiak" />
-    <link id="icon-scheme-light" rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
@@ -24,6 +33,7 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <meta name="msapplication-TileColor" content="#192129" />
     <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect dns-prefetch" href="https://www.google-analytics.com" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
       rel="stylesheet"
@@ -35,6 +45,28 @@
       };
       window.addEventListener('resize', appHeight);
       appHeight();
+    </script>
+    <script>
+      // TODO: If I want PWA - uncomment.
+      // if ('serviceWorker' in navigator) {
+      //   window.addEventListener('load', function() {
+      //     navigator.serviceWorker
+      //       .register('worker.js')
+      //       .then(
+      //         function(registration) {
+      //           console.log('Worker registration successful', registration.scope);
+      //         },
+      //         function(err) {
+      //           console.log('Worker registration failed', err);
+      //         },
+      //       )
+      //       .catch(function(err) {
+      //         console.log(err);
+      //       });
+      //   });
+      // } else {
+      //   console.log('Service Worker is not supported by browser.');
+      // }
     </script>
 
     <style>

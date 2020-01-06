@@ -11,15 +11,21 @@ interface LayoutMainProps {
 
 const LayoutMain: React.FC<LayoutMainProps> = ({ children }: LayoutMainProps) => {
   useEffect(() => {
+    // const isInStandaloneMode =
+    //   window.matchMedia('(display-mode: standalone)').matches ||
+    //   window.navigator['standalone'] ||
+    //   document.referrer.includes('android-app://');
+
     const pageLoadTime = Date.now() - window.performance.timing.navigationStart;
-    const timeout = pageLoadTime > 1500 ? pageLoadTime - 1500 : 1500;
+    const loaderTimeout = pageLoadTime > 1500 ? pageLoadTime - 1500 : 1500;
+    const pageTimeout = 1100;
     const addClassLoadedTimeout = setTimeout(() => {
       document.body.classList.add('loader-loaded');
       setTimeout(() => {
         document.body.classList.add('page-loaded');
         document.getElementById('loader')?.remove();
-      }, 1100);
-    }, timeout);
+      }, pageTimeout);
+    }, loaderTimeout);
 
     return (): void => {
       clearTimeout(addClassLoadedTimeout);

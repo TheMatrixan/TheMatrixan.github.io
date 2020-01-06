@@ -13,8 +13,6 @@ const getTheme = (): string => {
     }
   } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
     theme = Themes.Light;
-  } else {
-    theme = Themes.Dark;
   }
   return theme;
 };

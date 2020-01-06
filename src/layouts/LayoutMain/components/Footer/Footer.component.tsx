@@ -9,10 +9,12 @@ const Footer: React.FC = () => {
   const { formatMessage } = useIntl();
   const [stars, setStars] = useState<number | string>(0);
   const [forks, setForks] = useState<number | string>(0);
+
   useEffect(() => {
-    fetch('https://api.github.com/repos/TheMatrixan/TheMatrixan.github.io', {
-      method: 'GET',
-    })
+    if (process.env.NODE_ENV !== 'production') {
+      return;
+    }
+    fetch('https://api.github.com/repos/TheMatrixan/TheMatrixan.github.io')
       .then(response => {
         if (!response.ok) {
           throw Error(response.statusText);
