@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.b2874c68.chunk.css",
-    "main.js": "/static/js/main.0df9ffca.chunk.js",
-    "main.js.map": "/static/js/main.0df9ffca.chunk.js.map",
+    "main.css": "/static/css/main.0ec83486.chunk.css",
+    "main.js": "/static/js/main.7692f4c5.chunk.js",
+    "main.js.map": "/static/js/main.7692f4c5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.50d32523.js",
     "runtime-main.js.map": "/static/js/runtime-main.50d32523.js.map",
     "static/js/2.f6423103.chunk.js": "/static/js/2.f6423103.chunk.js",
     "static/js/2.f6423103.chunk.js.map": "/static/js/2.f6423103.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.07424b10256d2a7d48c5b3f5ac689e82.js": "/precache-manifest.07424b10256d2a7d48c5b3f5ac689e82.js",
+    "precache-manifest.5f4adc386359e6c7b6f0f22ae8f9b8cd.js": "/precache-manifest.5f4adc386359e6c7b6f0f22ae8f9b8cd.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b2874c68.chunk.css.map": "/static/css/main.b2874c68.chunk.css.map",
+    "static/css/main.0ec83486.chunk.css.map": "/static/css/main.0ec83486.chunk.css.map",
     "static/js/2.f6423103.chunk.js.LICENSE": "/static/js/2.f6423103.chunk.js.LICENSE",
     "static/media/Mateusz_Lesiak_CV.pdf": "/static/media/Mateusz_Lesiak_CV.f506f730.pdf",
     "static/media/icons.svg": "/static/media/icons.58118d56.svg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.50d32523.js",
     "static/js/2.f6423103.chunk.js",
-    "static/css/main.b2874c68.chunk.css",
-    "static/js/main.0df9ffca.chunk.js"
+    "static/css/main.0ec83486.chunk.css",
+    "static/js/main.7692f4c5.chunk.js"
   ]
 }
