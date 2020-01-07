@@ -16,6 +16,7 @@ interface ButtonLinkProps {
   title: string;
   loading?: boolean;
   className?: string;
+  target?: string;
   variant?: ButtonLinkVariants;
 }
 
@@ -23,12 +24,18 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
   title,
   href,
   className = '',
+  target = '',
   loading = false,
   variant = ButtonLinkVariants.Primary,
 }: ButtonLinkProps) => {
   const { formatMessage } = useIntl();
   return (
-    <Link to={href} className={cn(styles[variant], variant, className, 'btn')} title={formatMessage({ id: title })}>
+    <Link
+      to={href}
+      target={target}
+      className={cn(styles[variant], variant, className, 'btn')}
+      title={formatMessage({ id: title })}
+    >
       {variant === ButtonLinkVariants.Primary && (
         <>
           <span className="btn-primary-hex btn-primary-hex--top-right"></span>

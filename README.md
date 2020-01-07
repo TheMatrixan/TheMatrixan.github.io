@@ -12,7 +12,7 @@ I'm a software engineer from Lodz who specializes in building (and sometimes des
 
 Visit [thematrixan.github.io](https://thematrixan.github.io)
 
-[![Website demo](https://raw.githubusercontent.com/TheMatrixan/TheMatrixan.github.io/source/public/demo.png)](https://thematrixan.github.io/)
+[![Website demo](https://raw.githubusercontent.com/TheMatrixan/TheMatrixan.github.io/source/public/demo.gif)](https://thematrixan.github.io/)
 
 ## 🛠 Installation & Set Up
 

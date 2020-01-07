@@ -17,7 +17,7 @@ const Homepage: React.FC = () => {
             <FormattedMessage id="fullname" />
           </h1>
           <span className={styles['description']}>
-            <FormattedMessage id="homepage.description" />
+            <FormattedMessage id="description" />
           </span>
           <ButtonLink href="/resume" title="homepage.btn" className={styles['btn']} />
         </div>

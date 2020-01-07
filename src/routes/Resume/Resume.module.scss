@@ -1,8 +1,33 @@
-.temp {
+@import '../../assets/styles/utils/media_queries';
+
+.description {
+  line-height: 1.6875rem;
+  font-size: 1rem;
+}
+
+.details {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  color: var(--c, #fff);
+  flex-wrap: wrap;
+  padding: 20px 0 100px;
+}
+
+.other {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.experience {
+  max-width: 66.666666%;
+  flex: 1 0 66.666666%;
+}
+
+@include respond-below(sm) {
+  .details {
+    flex-direction: column;
+  }
+  .other,
+  .experience {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
 }
