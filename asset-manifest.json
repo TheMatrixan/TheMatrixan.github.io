@@ -1,19 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.0ec83486.chunk.css",
-    "main.js": "/static/js/main.7692f4c5.chunk.js",
-    "main.js.map": "/static/js/main.7692f4c5.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.50d32523.js",
-    "runtime-main.js.map": "/static/js/runtime-main.50d32523.js.map",
-    "static/js/2.f6423103.chunk.js": "/static/js/2.f6423103.chunk.js",
-    "static/js/2.f6423103.chunk.js.map": "/static/js/2.f6423103.chunk.js.map",
+    "main.css": "/static/css/main.fa981bdc.chunk.css",
+    "main.js": "/static/js/main.7c3a8d0a.chunk.js",
+    "main.js.map": "/static/js/main.7c3a8d0a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8ddcef3e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8ddcef3e.js.map",
+    "static/js/2.6b017366.chunk.js": "/static/js/2.6b017366.chunk.js",
+    "static/js/2.6b017366.chunk.js.map": "/static/js/2.6b017366.chunk.js.map",
+    "static/css/3.535383a8.chunk.css": "/static/css/3.535383a8.chunk.css",
+    "static/js/3.48364ef4.chunk.js": "/static/js/3.48364ef4.chunk.js",
+    "static/js/3.48364ef4.chunk.js.map": "/static/js/3.48364ef4.chunk.js.map",
+    "static/css/4.176e3606.chunk.css": "/static/css/4.176e3606.chunk.css",
+    "static/js/4.32a7ff5b.chunk.js": "/static/js/4.32a7ff5b.chunk.js",
+    "static/js/4.32a7ff5b.chunk.js.map": "/static/js/4.32a7ff5b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5f4adc386359e6c7b6f0f22ae8f9b8cd.js": "/precache-manifest.5f4adc386359e6c7b6f0f22ae8f9b8cd.js",
+    "precache-manifest.c45241bbde94a7da00ab77687fdc33b4.js": "/precache-manifest.c45241bbde94a7da00ab77687fdc33b4.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.0ec83486.chunk.css.map": "/static/css/main.0ec83486.chunk.css.map",
-    "static/js/2.f6423103.chunk.js.LICENSE": "/static/js/2.f6423103.chunk.js.LICENSE",
+    "static/css/3.535383a8.chunk.css.map": "/static/css/3.535383a8.chunk.css.map",
+    "static/css/4.176e3606.chunk.css.map": "/static/css/4.176e3606.chunk.css.map",
+    "static/css/main.fa981bdc.chunk.css.map": "/static/css/main.fa981bdc.chunk.css.map",
+    "static/js/2.6b017366.chunk.js.LICENSE": "/static/js/2.6b017366.chunk.js.LICENSE",
     "static/media/Mateusz_Lesiak_CV.pdf": "/static/media/Mateusz_Lesiak_CV.f506f730.pdf",
-    "static/media/icons.svg": "/static/media/icons.58118d56.svg",
+    "static/media/icons.svg": "/static/media/icons.b45c6c32.svg",
     "static/media/logo.svg": "/static/media/logo.abb2a07c.svg",
     "static/media/mateusz_lesiak.jpg": "/static/media/mateusz_lesiak.1dd17ba1.jpg",
     "static/media/mateusz_lesiak.webp": "/static/media/mateusz_lesiak.8a205d9d.webp",
@@ -21,9 +29,9 @@
     "static/media/mateusz_lesiak@2x.webp": "/static/media/mateusz_lesiak@2x.5aede141.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.50d32523.js",
-    "static/js/2.f6423103.chunk.js",
-    "static/css/main.0ec83486.chunk.css",
-    "static/js/main.7692f4c5.chunk.js"
+    "static/js/runtime-main.8ddcef3e.js",
+    "static/js/2.6b017366.chunk.js",
+    "static/css/main.fa981bdc.chunk.css",
+    "static/js/main.7c3a8d0a.chunk.js"
   ]
 }
