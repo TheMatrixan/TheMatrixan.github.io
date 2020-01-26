@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Link } from 'react-router-dom';
 import cn from 'classnames';
 import { useIntl } from 'react-intl';
@@ -49,4 +49,4 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
   );
 };
 
-export default ButtonLink;
+export default memo(ButtonLink);

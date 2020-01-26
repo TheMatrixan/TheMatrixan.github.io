@@ -5,7 +5,7 @@ export interface TimelineData {
   link?: string;
 }
 
-interface ResumeData {
+export interface ResumeData {
   education: TimelineData[];
   jobs: TimelineData[];
   projects: TimelineData[];

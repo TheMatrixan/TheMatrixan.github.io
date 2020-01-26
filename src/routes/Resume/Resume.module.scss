@@ -1,5 +1,18 @@
 @import '../../assets/styles/utils/media_queries';
 
+@keyframes slideInDown {
+  0% {
+    transform: translate3d(0, -20px, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
 .description {
   line-height: 1.6875rem;
   font-size: 1rem;
@@ -9,6 +22,8 @@
   display: flex;
   flex-wrap: wrap;
   padding: 20px 0 100px;
+  animation: slideInDown 0.5s 0.7s 1 both ease-out;
+  animation-play-state: paused;
 }
 
 .other {
@@ -21,6 +36,29 @@
   flex: 1 0 66.666666%;
 }
 
+.arrow {
+  @keyframes arrowUpDown {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, 10px, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  animation: arrowUpDown 1.2s infinite both ease-in-out;
+
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideInDown 0.5s 0.3s 1 both ease-out;
+    animation-play-state: paused;
+  }
+}
+
 @include respond-below(sm) {
   .details {
     flex-direction: column;
@@ -29,5 +67,12 @@
   .experience {
     flex: 1 0 100%;
     max-width: 100%;
+  }
+}
+
+body[class*='page-loaded'] {
+  .arrow-wrapper,
+  .details {
+    animation-play-state: running;
   }
 }

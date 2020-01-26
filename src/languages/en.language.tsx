@@ -21,6 +21,8 @@ const en = {
   'navigation.contact': 'Contact',
   'navigation.portfolio': 'Portfolio',
   'navigation.resume': 'Resume',
+  'notFound.title': 'Page not found',
+  'notFound.btn': 'Return to homepage',
   'portfolio.title': 'Portfolio',
   'resume.btn': 'Download in PDF',
   'resume.description':

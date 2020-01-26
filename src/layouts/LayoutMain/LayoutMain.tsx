@@ -11,6 +11,12 @@ interface LayoutMainProps {
 
 const LayoutMain: React.FC<LayoutMainProps> = ({ children }: LayoutMainProps) => {
   useEffect(() => {
+    if (window) {
+      window?.scrollTo(0, 0);
+    }
+  }, [children]);
+
+  useEffect(() => {
     // const isInStandaloneMode =
     //   window.matchMedia('(display-mode: standalone)').matches ||
     //   window.navigator['standalone'] ||
@@ -35,7 +41,7 @@ const LayoutMain: React.FC<LayoutMainProps> = ({ children }: LayoutMainProps) =>
   return (
     <>
       <Header />
-      <Suspense fallback="TODO: Loading...">
+      <Suspense fallback="Loading...">
         <main className={styles['main']}>{children}</main>
       </Suspense>
       <Footer />
