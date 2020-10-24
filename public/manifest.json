@@ -3,11 +3,6 @@
   "name": "Mateusz Lesiak",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
       "src": "/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
@@ -18,8 +13,32 @@
       "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "start_url": "/?utm_source=web_app_manifest",
   "display": "standalone",
+  "orientation": "portrait",
   "theme_color": "#ffffff",
-  "background_color": "#192129"
+  "background_color": "#192129",
+  "purpose": "any maskable",
+  "shortcuts": [
+    {
+      "name": "Portfolio",
+      "short_name": "Portfolio",
+      "description": "Co dokonałem, co uczyniłem w swoim życiu?",
+      "url": "/portfolio?utm_source=web_app_shortcut",
+      "icons": [
+        { "src": "/portfolio-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+        { "src": "/portfolio-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+      ]
+    },
+    {
+      "name": "CV",
+      "short_name": "CV",
+      "description": "Curriculum Vitae",
+      "url": "/resume?utm_source=web_app_shortcut",
+      "icons": [
+        { "src": "/resume-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+        { "src": "/resume-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+      ]
+    }
+  ]
 }

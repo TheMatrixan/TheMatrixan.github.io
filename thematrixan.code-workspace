@@ -5,17 +5,12 @@
     }
   ],
   "settings": {
-    "files.exclude": {
-      "**/.git": true,
-      "**/.svn": true,
-      "**/.hg": true,
-      "**/.DS_Store": true,
-      "**/.expo": true,
-      "**/node_modules/**": true,
-      "**/desktop.ini": true,
-      "build": true,
-      "**/*.xd": true,
-      "**/*.xcf": true
-    }
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll": true
+    },
+    "editor.formatOnSave": true,
+    "px-to-rem.px-per-rem": 16,
+    "editor.tabSize": 2
   }
 }

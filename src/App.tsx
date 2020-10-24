@@ -1,22 +1,47 @@
+import AppInit from '@components/appInit/AppInit.component';
+import Footer from '@components/footer/Footer.component';
+import GoogleAnalytics from '@components/googleAnalytics/GoogleAnalytics.component';
+import Header from '@components/header/Header.component';
+import MainHead from '@components/mainHead/MainHead.component';
+import activatePWA from '@helpers/activatePWA';
+import NotFound from '@pages/notFound/NotFound.page';
+import { Router } from '@reach/router';
+import LanguageProvider from '@services/Language.provider';
+import BreadcrumbsStructuredData from '@structuredData/breadcrumb/Breadcrumbs.structuredData';
 import React from 'react';
+import { Root, Routes } from 'react-static';
 
-import LanguageProvider from './hocs/LanguageProvider';
-import Router from './hocs/Router';
+import '@scss/main.scss';
 
-import './assets/styles/styles.scss';
+const App = (): JSX.Element => (
+  <Root>
+    <React.Suspense fallback={null}>
+      <AppInit />
+      <Router>
+        <Routes
+          path="*"
+          render={({ routePath, getComponentForPath }) => {
+            const component = getComponentForPath(routePath);
 
-// TODO: Delete.
-if (process.env.NODE_ENV !== 'production') {
-  const whyDidYouRender = require('@welldone-software/why-did-you-render/dist/no-classes-transpile/umd/whyDidYouRender.min.js');
-  whyDidYouRender(React);
+            return (
+              <LanguageProvider>
+                <MainHead />
+                <Header />
+                <main>{component || <NotFound />}</main>
+                <Footer />
+                <BreadcrumbsStructuredData />
+              </LanguageProvider>
+            );
+          }}
+        />
+      </Router>
+      <GoogleAnalytics />
+    </React.Suspense>
+  </Root>
+);
+
+if (process.env.NODE_ENV !== 'development') {
+  activatePWA();
 }
-
-const App: React.FC = () => {
-  return (
-    <LanguageProvider>
-      <Router />
-    </LanguageProvider>
-  );
-};
 
 export default App;

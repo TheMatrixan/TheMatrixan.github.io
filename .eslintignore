@@ -1,10 +1,18 @@
-!**/.eslintrc*
-node_modules*
-dist
-*.svg
-*.ico
-*.json
-.gitignore
-*.md
-*.log
-*.lock
+.eslintrc.js
+babel.config.js
+
+package.json
+tsconfig.json
+
+src/index.d.ts
+src/config/config.js
+public/service-worker.js
+
+# Packages
+node_modules/
+
+# Generated directory.
+artifacts/
+dist/
+build/
+coverage/

@@ -1,60 +1,69 @@
 {
-  "name": "thematrixan",
+  "name": "thematrixan.github.io",
   "version": "0.1.0",
   "homepage": "https://thematrixan.github.io/",
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "classnames": "^2.2.6",
-    "node-sass": "^4.13.0",
-    "react": "^16.12.0",
-    "react-animate-on-scroll": "^2.1.5",
-    "react-dom": "^16.12.0",
-    "react-intl": "^3.9.3",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0",
-    "typescript": "~3.7.2"
-  },
+  "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "rm -rf ./build && react-scripts build && cp build/index.html build/404.html",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "tsc --noEmit && eslint '*/**/*.{js,jsx,ts,tsx}' --quiet --fix",
-    "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build -b master"
+    "compile": "tsc ./src/config/config.ts -m commonjs --skipLibCheck --removeComments",
+    "compile:watch": "tsc --watch ./src/config/config.ts -m commonjs --skipLibCheck --removeComments",
+    "_start": "env-cmd react-static start",
+    "start": "npm-run-all --parallel compile:watch _start",
+    "build": "yarn compile && env-cmd react-static build",
+    "build:local": "yarn compile && env-cmd -f .env.local react-static build --staging",
+    "build:prod": "yarn compile && env-cmd -f .env.production react-static build",
+    "postbuild": "node workbox.build.js",
+    "analyze": "yarn build --analyze",
+    "serve": "serve dist -p 3000 -s",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "test": "echo 'No tests specified...'",
+    "predeploy": "yarn build:prod",
+    "deploy": "gh-pages -d dist -b master"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "clsx": "^1.1.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-intl": "^5.8.6",
+    "react-static": "^7.4.2",
+    "react-static-plugin-reach-router": "^7.4.2",
+    "react-static-plugin-sass": "^7.3.0",
+    "react-static-plugin-sitemap": "^7.4.2",
+    "react-static-plugin-typescript": "^7.4.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.13.0",
-    "@typescript-eslint/parser": "^2.13.0",
-    "@welldone-software/why-did-you-render": "^3.5.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.17.0",
-    "gh-pages": "^2.1.1",
-    "prettier": "^1.19.1",
-    "source-map-explorer": "^2.2.0"
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "@types/node": "^12.7.2",
+    "@types/reach__router": "^1.2",
+    "@types/react": "^16.9.1",
+    "@types/react-animate-on-scroll": "^2.1.2",
+    "@types/react-dom": "^16.8.5",
+    "@types/react-hot-loader": "^4.1.0",
+    "@types/webpack-env": "^1.14.0",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "cheerio": "^1.0.0-rc.3",
+    "env-cmd": "^10.1.0",
+    "eslint": "^7.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-json": "^2.1.2",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-unused-imports": "^1.0.0",
+    "extract-css-chunks-webpack-plugin": "^4.7.5",
+    "gh-pages": "^3.1.0",
+    "husky": "^4.3.0",
+    "npm-run-all": "^4.1.5",
+    "react-hot-loader": "^4.12.11",
+    "rimraf": "^3.0.2",
+    "sass-loader": "^7.1.0",
+    "serve": "^11.1.0",
+    "typescript": "^4.0.3",
+    "workbox-build": "^5.1.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test && yarn lint"
+    }
   }
 }

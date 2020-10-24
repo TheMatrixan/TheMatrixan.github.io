@@ -1,0 +1,70 @@
+@import '@scss/utils/media_queries';
+
+.footer {
+  background-color: var(--footer-bg, #0c1015);
+  animation: opacityAnim 0.4s 0.5s 1 both ease-out;
+}
+.row {
+  padding: 0.625rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  color: var(--footer-c, #888);
+  font-size: 0.875rem;
+}
+.link {
+  @extend .info;
+  text-decoration: none;
+  transition: 0.2s ease;
+  display: flex;
+
+  &:focus,
+  &:hover {
+    color: #4ec9a7;
+  }
+}
+
+.icon-num {
+  display: inline-flex;
+  padding: 0.1875rem 0.3125rem;
+  align-items: center;
+  width: 100%;
+}
+.icon {
+  padding: 0 0.25rem;
+  height: 1.25rem;
+}
+
+@include breakpoint-down(sm) {
+  .row {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@keyframes opacityAnim {
+  0% {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body[class*='loader-loaded'] {
+  .footer {
+    animation-play-state: running;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer {
+    animation: none !important;
+  }
+}

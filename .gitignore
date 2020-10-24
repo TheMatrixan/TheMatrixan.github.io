@@ -2,7 +2,11 @@
 
 # dependencies
 /node_modules
+/old-version
 /.pnp
+/tmp
+/dist
+/artifacts
 .pnp.js
 
 # testing
@@ -39,3 +43,15 @@ yarn-error.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# config
+src/config/config.js
+
+# misc
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.production
+

@@ -1,0 +1,45 @@
+.border {
+  width: 150px;
+  height: 1px;
+  display: block;
+  background-image: linear-gradient(to right, var(--c) 40%, rgba(255, 255, 255, 0) 20%);
+  background-position: left;
+  background-size: 15px 100%;
+  background-repeat: repeat-x;
+}
+
+.title {
+  color: var(--c);
+  font-size: 3.5em;
+  margin-bottom: 0.2rem;
+}
+
+.wrapper {
+  margin-bottom: 50px;
+  animation: slideInDown 0.4s 1 both ease-out;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translate3d(0, -20px, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+body[class*='page-loaded'] {
+  .wrapper {
+    animation-play-state: running;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wrapper {
+    animation: none !important;
+  }
+}
