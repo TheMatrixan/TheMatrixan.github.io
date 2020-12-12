@@ -17,22 +17,6 @@
 }
 
 .hex-menu {
-  @keyframes hexMenuAnim {
-    0% {
-      stroke-dashoffset: 300;
-    }
-    68% {
-      fill: transparent;
-    }
-    73% {
-      fill: var(--navbar-hex-bg);
-    }
-    100% {
-      fill: var(--navbar-hex-bg);
-      stroke-dashoffset: 600;
-    }
-  }
-
   stroke-width: 5px;
   stroke: var(--primary);
   height: 400px;
@@ -42,7 +26,6 @@
   position: absolute;
   z-index: 0;
   user-select: none;
-  animation: hexMenuAnim 4s cubic-bezier(0.65, 0.04, 0.35, 1) 0s 1 both;
   stroke-dasharray: 300px;
   stroke-dashoffset: 0;
 }
@@ -64,13 +47,6 @@
   align-items: flex-start;
   position: relative;
 
-  &-logo,
-  &-toggle,
-  &-item,
-  &-top {
-    animation: slideInDown 0.4s 0.5s 1 both ease-out;
-  }
-
   &-menu {
     display: flex;
     margin: 0;
@@ -85,7 +61,7 @@
 
   &-top {
     position: absolute;
-    animation-delay: 0.7s;
+
     top: 0;
     right: 0;
     display: flex;
@@ -180,7 +156,6 @@
       z-index: 4;
       visibility: hidden;
       opacity: 0;
-      animation: none !important;
       position: fixed;
       left: 20px;
       top: 20px;
@@ -283,43 +258,5 @@
     height: 150px;
     top: -60px;
     right: -60px;
-  }
-}
-
-@keyframes slideInDown {
-  0% {
-    transform: translate3d(0, -100%, 0);
-    visibility: visible;
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-    transform: translateZ(0);
-  }
-}
-
-body[class*='loader-loaded'] {
-  .hex-menu {
-    animation-play-state: running;
-  }
-  .navbar {
-    &-logo,
-    &-toggle,
-    &-item,
-    &-top {
-      animation-play-state: running;
-    }
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .navbar {
-    &-logo,
-    &-toggle,
-    &-item,
-    &-top {
-      animation: none !important;
-    }
   }
 }

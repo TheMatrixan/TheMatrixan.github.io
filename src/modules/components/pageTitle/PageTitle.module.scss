@@ -16,30 +16,4 @@
 
 .wrapper {
   margin-bottom: 50px;
-  animation: slideInDown 0.4s 1 both ease-out;
-}
-
-@keyframes slideInDown {
-  0% {
-    transform: translate3d(0, -20px, 0);
-    visibility: visible;
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-    transform: translateZ(0);
-  }
-}
-
-body[class*='page-loaded'] {
-  .wrapper {
-    animation-play-state: running;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .wrapper {
-    animation: none !important;
-  }
 }

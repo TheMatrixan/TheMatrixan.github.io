@@ -37,11 +37,7 @@ const Header: React.FC = () => {
             </div>
             <ul className={clsx(styles['navbar-menu'], { [styles['mobile']]: menuToggled })}>
               {navigation.map(({ path, name, enhance = false }, index) => (
-                <li
-                  key={path}
-                  className={styles['navbar-item']}
-                  style={{ animationDelay: `${index * 100 + 700}ms` }}
-                  onClick={toggleMenu}>
+                <li key={path} className={styles['navbar-item']} onClick={toggleMenu}>
                   <Link to={path} className={styles['navbar-item-link']} activeClassName={styles['active']}>
                     <FormattedMessage id={name} />
                   </Link>

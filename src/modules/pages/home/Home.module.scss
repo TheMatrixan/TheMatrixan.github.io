@@ -1,21 +1,7 @@
 @import '@scss/utils/media_queries';
 
 .hero {
-  @keyframes slideInDown20 {
-    0% {
-      transform: translate3d(0, -20px, 0);
-      visibility: visible;
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-      transform: translateZ(0);
-    }
-  }
-
   padding: 10rem 0 4rem;
-  animation: slideInDown20 0.5s 0.1s 1 both ease-out;
 }
 
 .introduction {
@@ -39,16 +25,4 @@
   display: block;
   line-height: 1.6875rem;
   margin-bottom: 2.5rem;
-}
-
-@include breakpoint-down(sm) {
-  .hero {
-    padding: 3rem 0 2rem;
-  }
-}
-
-body[class*='page-loaded'] {
-  .hero {
-    animation-play-state: running;
-  }
 }
