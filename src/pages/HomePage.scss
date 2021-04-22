@@ -1,0 +1,208 @@
+$breakpoints: (
+  mobile: 568px,
+  tablet: 768px,
+  notebook: 1024px,
+  laptop: 1366px,
+  desktop: 1600px,
+);
+
+.Home {
+  &-incentive {
+    margin: -6rem 0 0;
+    user-select: none;
+    max-height: 80vh;
+    max-width: 100%;
+    overflow: visible;
+
+    @media (max-width: map-get($breakpoints, laptop)) {
+      margin-bottom: -1rem;
+      max-height: 70vh;
+    }
+    @media (max-width: map-get($breakpoints, tablet)) {
+      margin-bottom: -2rem;
+    }
+    @media (max-width: map-get($breakpoints, mobile)) {
+      max-height: 80vh;
+      margin: -8rem 0 -8rem;
+    }
+
+    #javascript {
+      @keyframes js {
+        from {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+        50% {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+          transform: translate3d(400px, 100px, 0);
+        }
+      }
+      animation: js 1.5s ease-in-out 1s infinite both;
+    }
+
+    #react {
+      @keyframes react {
+        from {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+        50% {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+          transform: translate3d(-400px, -100px, 0);
+        }
+      }
+      animation: react 1.5s ease-in-out 0.5s infinite both;
+    }
+
+    #typescript {
+      @keyframes typescript {
+        from {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+        50% {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+          transform: translate3d(-400px, 100px, 0);
+        }
+      }
+      animation: typescript 1.5s ease-in-out 1.5s infinite both;
+    }
+
+    #gatsby {
+      @keyframes gatsby {
+        from {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+        50% {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+          transform: translate3d(400px, -100px, 0);
+        }
+      }
+      animation: gatsby 1.5s ease-in-out 2s infinite both;
+    }
+  }
+
+  &-heading {
+    position: relative;
+    z-index: 1;
+  }
+
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    z-index: 1;
+
+    @media (max-width: map-get($breakpoints, tablet)) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &-link-wrapper {
+    flex: 0 0 auto;
+  }
+
+  &-link {
+    color: inherit;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: currentColor;
+    letter-spacing: 2px;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      left: 0;
+      bottom: 0;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      transition: width 0.2s;
+      will-change: width;
+      background: currentColor;
+    }
+
+    &:focus,
+    &:hover {
+      outline: none;
+
+      &:after {
+        width: 100%;
+      }
+    }
+
+    &:focus-visible {
+      outline: initial;
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+
+  &-subtitle {
+    flex: 0 0 auto;
+  }
+
+  &-arrow {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 0 1rem;
+    overflow: visible;
+
+    .line {
+      @keyframes line-move {
+        from {
+          stroke-dashoffset: 520px;
+        }
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      stroke-dasharray: 520px;
+      stroke-dashoffset: 520px;
+      animation: line-move 1s ease-in 0.1s 1 both;
+    }
+
+    .tick {
+      @keyframes tick-move {
+        from {
+          stroke-dashoffset: 12px;
+        }
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      stroke-dasharray: 12px;
+      stroke-dashoffset: 12px;
+      animation: tick-move 0.1s ease-in 0.95s 1 both;
+    }
+
+    @media (max-width: map-get($breakpoints, laptop)) {
+      path {
+        stroke-width: 4px;
+      }
+    }
+
+    @media (max-width: map-get($breakpoints, notebook)) {
+      display: none;
+    }
+  }
+}

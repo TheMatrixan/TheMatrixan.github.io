@@ -1,22 +1,26 @@
-import React from 'react';
+import React, { VoidFunctionComponent } from 'react';
+import { Switch } from 'react-router-dom';
+import { Root, Routes } from 'react-static';
 
-import LanguageProvider from './hocs/LanguageProvider';
-import Router from './hocs/Router';
+import AppInit from 'components/AppInit';
+import GoogleAnalytics from 'components/GoogleAnalytics';
+import Head from 'components/Head';
 
-import './assets/styles/styles.scss';
+import './assets/styles/main.scss';
 
-// TODO: Delete.
-if (process.env.NODE_ENV !== 'production') {
-  const whyDidYouRender = require('@welldone-software/why-did-you-render/dist/no-classes-transpile/umd/whyDidYouRender.min.js');
-  whyDidYouRender(React);
-}
+const Loader = null;
 
-const App: React.FC = () => {
-  return (
-    <LanguageProvider>
-      <Router />
-    </LanguageProvider>
-  );
-};
+const App: VoidFunctionComponent = () => (
+  <Root>
+    <React.Suspense fallback={Loader}>
+      <Switch>
+        <Routes path="*" />
+        <AppInit />
+      </Switch>
+      <Head />
+      <GoogleAnalytics />
+    </React.Suspense>
+  </Root>
+);
 
 export default App;

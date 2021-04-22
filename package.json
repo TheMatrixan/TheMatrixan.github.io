@@ -1,60 +1,66 @@
 {
-  "name": "thematrixan",
-  "version": "0.1.0",
+  "name": "thematrixan.github.io",
+  "version": "2.0.0",
   "homepage": "https://thematrixan.github.io/",
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "classnames": "^2.2.6",
-    "node-sass": "^4.13.0",
-    "react": "^16.12.0",
-    "react-animate-on-scroll": "^2.1.5",
-    "react-dom": "^16.12.0",
-    "react-intl": "^3.9.3",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0",
-    "typescript": "~3.7.2"
-  },
+  "description": "Portfolio page",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "rm -rf ./build && react-scripts build && cp build/index.html build/404.html",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "tsc --noEmit && eslint '*/**/*.{js,jsx,ts,tsx}' --quiet --fix",
-    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "start": "react-static start",
+    "build": "react-static build",
+    "analyze": "react-static build --analyze",
+    "serve": "serve dist -p 3000 -s",
+    "lint": "eslint --ext .tsx,.ts src/",
+    "lint:fix": "eslint --ext .tsx,.ts src/ --fix",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build -b master"
+    "deploy": "gh-pages -d dist -b main"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheMatrixan/TheMatrixan.github.io.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [
+    "portfolio",
+    "typescript",
+    "portfolio-website",
+    "reactjs"
+  ],
+  "author": "Mateusz Lesiak",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/TheMatrixan/TheMatrixan.github.io/issues"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-static": "^7.5.3",
+    "react-static-plugin-react-router": "^7.5.3",
+    "react-static-plugin-sass": "^7.3.0",
+    "react-static-plugin-sitemap": "^7.5.3",
+    "react-static-plugin-typescript": "^7.5.3"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.13.0",
-    "@typescript-eslint/parser": "^2.13.0",
-    "@welldone-software/why-did-you-render": "^3.5.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.9.0",
+    "@types/node": "^14.14.41",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-hot-loader": "^4.1.1",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/webpack-env": "^1.16.0",
+    "react-hot-loader": "^4.13.0",
+    "serve": "^11.3.2",
+    "typescript": "^4.2.4",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-loader": "2.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "6.1.2",
     "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.17.0",
-    "gh-pages": "^2.1.1",
-    "prettier": "^1.19.1",
-    "source-map-explorer": "^2.2.0"
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^4.0.6",
+    "eslint-plugin-unused-imports": "^1.0.1",
+    "prettier": "1.19.1",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0"
   }
 }

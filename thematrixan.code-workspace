@@ -5,17 +5,18 @@
     }
   ],
   "settings": {
-    "files.exclude": {
-      "**/.git": true,
-      "**/.svn": true,
-      "**/.hg": true,
-      "**/.DS_Store": true,
-      "**/.expo": true,
-      "**/node_modules/**": true,
-      "**/desktop.ini": true,
-      "build": true,
-      "**/*.xd": true,
-      "**/*.xcf": true
-    }
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 2,
+    "prettier.printWidth": 120,
+    "prettier.singleQuote": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll": true
+    },
+    "editor.formatOnSave": true,
+    "css.lint.duplicateProperties": "warning",
+    "scss.lint.duplicateProperties": "warning",
+    "scss.lint.zeroUnits": "warning",
+    "css.lint.zeroUnits": "warning"
   }
 }
